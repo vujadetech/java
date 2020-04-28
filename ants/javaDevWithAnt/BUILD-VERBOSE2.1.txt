@@ -1,0 +1,21 @@
+Apache Ant(TM) version 1.10.5 compiled on March 28 2019
+Trying the default build file: build.xml
+Buildfile: /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/build.xml
+Detected Java version: 11 in: /usr/lib/jvm/java-11-openjdk-amd64
+Detected OS: Linux
+parsing buildfile /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/build.xml with URI = file:/home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/build.xml
+Project base dir set to: /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1
+Build sequence for target(s) `compile' is [compile]
+Complete build sequence is [compile, ]
+
+compile:
+parsing buildfile jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+    [javac] /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/build.xml:4: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/BUILD-VERBOSE.txt skipped - don't know how to handle it
+    [javac] /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/Main.class skipped - don't know how to handle it
+    [javac] Main.java omitted as /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/Main.class is up to date.
+    [javac] /home/me/stf/sandbox/gits/vujade/java/ants/javaDevWithAnt/2.1/build.xml skipped - don't know how to handle it
+     [echo] compilation complete!
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

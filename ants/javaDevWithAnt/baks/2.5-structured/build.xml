@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<project name="structured" default="archive" >
+<description>Compiles and runs a simple program</description>
+
+  <target name="init">
+    <mkdir dir="build/classes" />
+    <mkdir dir="dist" />
+  </target>
+
+  <target name="compile" depends="init" description="COMPILES">
+    <javac includeantruntime="false" srcdir="src" destdir="build/classes"/>
+  </target>
+
+  <target name="archive" depends="compile" description="CREATES JAR" >
+    <jar destfile="dist/project.jar" basedir="build/classes" />
+  </target>
+
+  <target name="clean" depends="init" description="REMOVES TEMP DIRS">
+    <delete dir="build" />
+    <delete dir="dist" />
+  </target>
+
+  <target name="execute" depends="compile" description="RUNS IT">
+    <echo level="warning" message="RUNning" />
+    <java
+      classname="org.example.antbook.lesson1.Main"
+      classpath="build/classes">
+      <arg value="a"/>
+      <arg value="b"/>
+      <arg file="."/>
+    </java>
+  </target>
+
+</project>

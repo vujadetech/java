@@ -1,0 +1,2 @@
+javac -cp .:.. Dinner.java
+java -cp .:.. Dinner
