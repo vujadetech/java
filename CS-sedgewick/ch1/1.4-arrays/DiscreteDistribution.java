@@ -1,3 +1,5 @@
+// Exercise 1.4.12
+
 import static java.lang.System.out;
 
 public class DiscreteDistribution {
