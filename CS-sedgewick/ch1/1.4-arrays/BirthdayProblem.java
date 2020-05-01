@@ -3,7 +3,7 @@
 // calling with n = 5000 consistently gives the right answer, 23.0.
 
 import static java.lang.System.out;
-import  java.util.Random;
+import java.util.Random;
 
 public class BirthdayProblem {
   private final int DaysPerYear = 365;
@@ -16,9 +16,6 @@ public class BirthdayProblem {
     conflicts = new int[ numberOfSims ];
     for(int i = 0; i < numberOfSims; ++i) {
       conflicts[i] = this.haveParty();
-    }
-    for(int conflict : conflicts) {
-      out.print(conflict + ", ");
     }
     out.println("\naverage=" + this.averagePartySize());
   }
@@ -42,20 +39,18 @@ public class BirthdayProblem {
     int i, guest_bday, firstConflict;
     for(i = 0; i < DaysPerYear; ++i) {
       guest_bday = nextGuest();
-      if (bdays[ guest_bday ] == true) {
+      if (bdays[ guest_bday ] == true) { // conflict of bdays
         return i;
       } else {
         bdays[ guest_bday ] = true;
       }
     }
-    return i;
+    return i; // if i hasn't been returned until now, it = DaysPerYear
   }
 
   public static void main(String[] args) {
     BirthdayProblem bp = new BirthdayProblem(Integer.parseInt(args[0]));
-    //bp.nextGuest();
-  //  int x = bp.haveParty();
-  //  out.println(x);
+
   }
 
 }
